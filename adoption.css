@@ -193,9 +193,3 @@ body {
     color: var(--dark);
     margin: 5px 0;
 }
-
-footer {
-    text-align: center;
-    font-size: 20px;
-    color: var(--dark);
-}
