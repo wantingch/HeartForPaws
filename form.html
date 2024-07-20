@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="form.css">
+        <script src="main.js" type="module" defer></script>
+        <title>Volunteer Form</title>
+
+    </head>
+    <body>
+        <header class="HeaderLine">
+            <a href="index.html">
+                <img id="logoimage" src="./images/logo.webp" alt="logo">
+            </a>
+            <h1 id="CompanyName">Heart For Paws</h1>
+            <nav class="buttom">
+                <a class="icon" href="#"><img src="./images/search.png" alt="Search"></a>
+                <a class="icon" href="#"><img src="./images/account.png" alt="Account"></a>
+                <a class="icon" href="#"><img src="./images/cart.png" alt="Cart"></a>
+            </nav>
+        </header>
+            <h1 class="formtitle">Volunteer Form</h1>
+            <form class="display">
+                <label for="flname">First Name & Last Name</label>
+                <input type="text" id="flname" name="flname" placeholder="Your first name and last name ..">
+        
+                <label for="Email">Email</label>
+                <input type="text" id="Email" name="email" placeholder="Your email address..">
+        
+                <label for="Gender">Gender</label>
+                <select id="Gender" name="country">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                </select>
+        
+                <input type="submit" value="Submit">
+            </form>
+    </body>
+    <footer>
+        <p>Tina Chen</p>
+    </footer>
+</html>

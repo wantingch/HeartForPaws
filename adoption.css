@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+/* Root Variables */
+:root {
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    --brown: #77645d;
+    --rice-white:#d8d1c9 ;
+    --dark: #111419;
+    --white: #FFFFFF;
+}
+
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--rice-white);
+}
+
+#logoimage {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+/* Header Line Styles */
+.HeaderLine {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* Company Name Styles */
+#CompanyName {
+    justify-content: center;
+    margin-right: 20px;
+}
+
+
+/* Button Styles */
+.buttom {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+/* Icon Styles */
+.icon {
+    margin-right: 20px;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; /* Adjust this value to fit the width of the blocks */
+}
+
+.sb {
+    background-color: var(--brown);
+    width: 30%; /* Adjust this value to change the width of the blocks */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sb:hover {
+    background-color: var(--dark);
+}
+
+.line {
+    border: none;
+    height: 4px; /* Thickness of the line */
+    background-color: var(--brown); /* Color of the line */
+    width: 90%; /* Line width */
+    position: absolute; /* Make line position absolute to place it correctly */
+    top: 140px; /* Adjust this value based on your header's actual height */
+    left: 5%;
+}
+
+.filter {
+    background-color: var(--white);
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark); /* Change color to dark for visibility */
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute; /* Add positioning */
+    top: 160px; /* Adjust this value to match the end of your horizontal line */
+    left: 50%; /* Center the filter button */
+    transform: translateX(-50%); /* Correctly center based on its own width */
+}
+
+.filter a {
+    color: inherit; /* Ensure link inside takes the same color */
+    text-decoration: none;
+}
+
+/* Dropdown Button Styles */
+.dropbtn {
+    background-color: var(--white);
+    color: var(--dark);
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Full width of the dropdown */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 160px; /* Set the width of the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--dark);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.filter:hover .dropdown-content {
+    display: block;
+}
+
+/* Change background of dropdown button when dropdown content is displayed */
+.filter:hover .dropbtn {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ensures even spacing */
+    gap: 20px; /* Space between cards */
+    top: 250px; /* Adjust this based on the actual height of the elements above */
+    left: 50%;
+    padding: 20px;
+    margin: 100px;
+
+}
+
+.animal {
+    background-color: var(--white);
+    width: 400px; /* Fixed width for each card */
+    text-align: center; /* Center the text */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensures no overflow */
+    margin-bottom: 20px; /* Space below each card */
+}
+
+.animal img {
+    width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid var(--brown); /* Line under the image */
+}
+
+.animal .info {
+    padding: 10px;
+}
+
+.animal h3, .animal p {
+    color: var(--dark);
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    color: var(--dark);
+}

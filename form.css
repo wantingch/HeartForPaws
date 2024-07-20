@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+/* Root Variables */
+:root {
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    --brown: #77645d;
+    --rice-white:#d8d1c9 ;
+    --dark: #111419;
+    --white: #FFFFFF;
+}
+
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--rice-white);
+}
+
+#logoimage {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+/* Header Line Styles */
+.HeaderLine {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* Company Name Styles */
+#CompanyName {
+    justify-content: center;
+    margin-right: 20px;
+}
+
+
+/* Button Styles */
+.buttom {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+/* Icon Styles */
+.icon {
+    margin-right: 20px;
+}
+
+.display {
+    top: 50%;  /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 300px; /* Or any fixed or max-width you prefer */
+    padding: 20px; /* Optional, for some internal spacing */
+    box-shadow: 0 4px 8px var(--dark); /* Optional, adds shadow for better visibility */
+    background: #fff; /* Optional, sets a background color */
+    border-radius: 8px; /* Optional, rounds the corners */
+    margin: 0 auto;
+}
+
+.formtitle{
+    top: 30%;  /* Center vertically */
+    left: 50%; /* Center horizontally */
+    padding: 20px; /* Optional, for some internal spacing */
+    font-size: 40px;
+    text-align: center;
+}
+
+form {
+    background-color: var(--white);
+    padding: 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color:var(--brown);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input[type="submit"]:hover {
+    background-color:var(--rice-white);
+}
+
+footer {
+    text-align: center;
+    padding: 0;
+    font-size: 0.6em;
+    color: var(--brown);
+    font-size: 20px;
+    clear: both;
+}

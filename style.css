@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+/* Root Variables */
+:root {
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    --brown: #77645d;
+    --rice-white:#d8d1c9 ;
+    --dark: #111419;
+    --white: #FFFFFF;
+}
+
+/* Body Styles */
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url("./images/back2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Logo Image Styles */
+#logoimage {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+/* Header Line Styles */
+.HeaderLine {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* Company Name Styles */
+#CompanyName {
+    justify-content: center;
+    margin-right: 20px;
+}
+
+/* Button Styles */
+.buttom {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+/* Icon Styles */
+.icon {
+    margin-right: 20px;
+}
+
+/* Main Section Styles */
+.main {
+    margin-left: 20px;
+    display: block;
+    min-height: 80vh;
+}
+
+/* Title Styles */
+.title {
+    font-size: 30px;
+    width: 25%;
+}
+
+/* Content Styles */
+.content {
+    font-size:25px ;
+    font-weight: bolder;
+    width: 25%;
+    color: var(--dark);
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Adjust this value to fit the width of the blocks */
+}
+
+.sb {
+    background-color: var(--brown);
+    width: 30%; /* Adjust this value to change the width of the blocks */
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sb:hover {
+    background-color: var(--dark);
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+    color: var(--rice-white);
+}
